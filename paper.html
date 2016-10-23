@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>360问卷管理</title>
+	<link rel="stylesheet" type="text/css" href="./content/css/base.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./content/css/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./content/css/page.css" media="all" />
+    <script type="text/javascript" src="./content/js/jquery.js"></script>
+    <script type="text/javascript" src="./content/js/script.js"></script>
+</head>
+<body>
+<div class="doc">
+        <div class="mbxArea">
+            <a href="/Solution/Scheme/Index" class="first">360度反馈</a>&gt;<a href="javascript:void(0);" class="now">问卷管理</a>
+        </div>
+        <div class="i_create clearFix mb20" style="display: none;">
+            <div class="btns fr">
+                <a href="" class="a"><span class="s">题目维度编辑</span></a><a href="" class="a"><span class="s">创建360度反馈</span></a><a href="" class="a"><span class="s">查看历史数据</span></a>
+            </div>
+        </div>
+        <div class="n_area mb20">
+            <div class="addTMType clearFix">
+                <p class="type"><a href="dxQues">单选题</a><a href="dfQues">打分题</a><a href="wdQues">问答题</a></p>
+                <span class="name fr">
+                    <img src="./content/images/img01.png" alt="" />添加题目</span>
+            </div>
+            <h3 class="n_name mb20">问卷管理</h3>
+            <div class="n_dsb_wjgl ">
+                <div class="list">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--题目类型-->
+    <div class="questionsType">
+        <!--单选题框架-->
+        <div class="dxQues quesOne">
+            <input type="hidden" class="questiondetail" name="" id="" questiontype="" value="" />
+            <table width="100%" class="mb20">
+                <thead>
+                    <tr>
+                        <td width="10%" class="fb num" quesid="" questiontype="" sequence="">0</td>
+                        <td class="tmzs">
+                            <p class="tm fb">单选</p>
+                            <p class="xx clearFix">
+                                <input type="radio" name="" value="" id="" optiondesc="选项一" optionscore="1" class="radio" />
+                                <span>选项一</span>
+                            </p>
+                            <p class="xx clearFix">
+                                <input type="radio" name="" value="" id="" optiondesc="选项二" optionscore="2" class="radio" />
+                                <span>选项二</span>
+                            </p>
+                            <p class="xx clearFix">
+                                <input type="radio" name="" value="" id="" optiondesc="选项三" optionscore="3" class="radio" />
+                                <span>选项三</span>
+                            </p>
+                        </td>
+                        <td class="px" width="15%"><span class="endT ">&nbsp;</span><span class="endB ">&nbsp;</span><span class="top ">&nbsp;</span><span class="bottom ">&nbsp;</span>
+                            <p class="f12 fw pt10 fb orangeColor fcstatusshow">未选维度</p>
+                        </td>
+                        <td class="cz" width="15%">
+                            <ul>
+                                <li><a href="" class="editBtn"><span>编辑</span></a></li>
+                                <li><a href="" class="copyBtn"><span>复制</span></a></li>
+                                <li><a href="" class="delBtn"><span>删除</span></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fb">设置题目</td>
+                        <td>
+                            <p class="tl">
+                                <textarea name="" class="textarea tmedit" id="" cols="30" rows="10">单选</textarea>
+                            </p>
+                        </td>
+                        <td colspan="2">
+                            <p class="fl">
+                                <span class="fb">题目维度</span>
+                                <input type="text" name="" id="" class="text ml10 tmwd" fcvalue="" readonly="readonly" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fb">设置选项</td>
+                        <td class="szxx">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td width="70%"><span>选项：</span>
+                                            <input type="text" name="" id="" class="text mr10 optionchange" value="选项一" />
+                                            <span>分值：</span>
+                                            <input type="text" name="" id="" class="text text2 optionchange number_zint" value="1" maxlength="8" />
+                                        </td>
+                                        <td class="noBr xxCz tc"><span class="blueColor f12 addxxBtn">添加</span><span class="blueColor f12 delxxBtn">删除</span><span class="xxTop">&nbsp;</span><span class="xxBottom">&nbsp;</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70%"><span>选项：</span>
+                                            <input type="text" name="" id="" class="text mr10 optionchange" value="选项二" />
+                                            <span>分值：</span>
+                                            <input type="text" name="" id="" class="text text2 optionchange number_zint" value="2" maxlength="8" />
+                                        </td>
+                                        <td class="noBr xxCz tc"><span class="blueColor f12 addxxBtn">添加</span><span class="blueColor f12 delxxBtn">删除</span><span class="xxTop">&nbsp;</span><span class="xxBottom">&nbsp;</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="70%"><span>选项：</span>
+                                            <input type="text" name="" id="" class="text mr10 optionchange" value="选项三" />
+                                            <span>分值：</span>
+                                            <input type="text" name="" id="" class="text text2 optionchange number_zint" value="3" maxlength="8" />
+                                        </td>
+                                        <td class="noBr xxCz tc"><span class="blueColor f12 addxxBtn">添加</span><span class="blueColor f12 delxxBtn">删除</span><span class="xxTop">&nbsp;</span><span class="xxBottom">&nbsp;</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <p class="tl">
+                                <span class="fb">题目说明</span>
+                                <textarea name="" class="textarea textarea2 mt10 tmsm" id="" cols="30" rows="10"></textarea>
+                                <input type="hidden" class="mrnr" value="" />
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--问答题框架-->
+        <div class="wdQues quesOne">
+            <input type="hidden" class="questiondetail" name="" id="" questiontype="" value="" />
+            <table width="100%" class="mb20">
+                <thead>
+                    <tr>
+                        <td width="10%" class="fb num" quesid="" questiontype="" sequence="">0</td>
+                        <td class="tmzs">
+                            <p class="tm fb">问答</p>
+                        </td>
+                        <td class="px" width="15%"><span class="endT ">&nbsp;</span><span class="endB ">&nbsp;</span><span class="top ">&nbsp;</span><span class="bottom ">&nbsp;</span>
+                            <p class="f12 fw pt10 fb orangeColor fcstatusshow">未选维度</p>
+                        </td>
+                        <td class="cz" width="15%">
+                            <ul>
+                                <li><a href="" class="editBtn"><span>编辑</span></a></li>
+                                <li><a href="" class="copyBtn"><span>复制</span></a></li>
+                                <li><a href="" class="delBtn"><span>删除</span></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fb">设置题目</td>
+                        <td>
+                            <p class="tl">
+                                <textarea name="" class="textarea tmedit" id="" cols="30" rows="10">问答</textarea>
+                            </p>
+                        </td>
+                        <td colspan="2">
+                            <p class="fl">
+                                <span class="fb">题目维度</span>
+                                <input type="text" name="" id="" class="text ml10 tmwd" fcvalue="" readonly="readonly" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fb">默认内容</td>
+                        <td class="szxx">
+                            <table width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <textarea name="" class="textarea mrnr" id="" cols="" rows=""></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td colspan="2">
+                            <p class="tl">
+                                <span class="fb">题目说明</span>
+                                <textarea name="" class="textarea textarea2 mt10 tmsm" id="" cols="30" rows="10"></textarea>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--打分题框架-->
+        <div class="dfQues quesOne">
+            <input type="hidden" class="questiondetail" name="" id="" questiontype="" value="" />
+            <table width="100%" class="mb20">
+                <thead>
+                    <tr>
+                        <td width="10%" class="fb num" quesid="" questiontype="" sequence="">0</td>
+                        <td class="tmzs">
+                            <p class="tm fb">打分</p>
+                        </td>
+                        <td class="px" width="15%"><span class="endT ">&nbsp;</span><span class="endB ">&nbsp;</span><span class="top ">&nbsp;</span><span class="bottom ">&nbsp;</span>
+                            <p class="f12 fw pt10 fb orangeColor fcstatusshow">未选维度</p>
+                        </td>
+                        <td class="cz" width="15%">
+                            <ul>
+                                <li><a href="" class="editBtn"><span>编辑</span></a></li>
+                                <li><a href="" class="copyBtn"><span>复制</span></a></li>
+                                <li><a href="" class="delBtn"><span>删除</span></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fb">设置题目</td>
+                        <td>
+                            <p class="tl">
+                                <textarea name="" class="textarea tmedit" id="" cols="30" rows="10">打分</textarea>
+                            </p>
+                        </td>
+                        <td colspan="2">
+                            <p class="fl">
+                                <span class="fb">题目维度</span>
+                                <input type="text" name="" id="" class="text ml10 tmwd" fcvalue="" readonly="readonly" />
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fb">题目说明</td>
+                        <td colspan="3">
+                            <p class="tl">
+                                <textarea name="" class="textarea textarea2 mt10 tmsm" id="" cols="30" rows="10"></textarea>
+                                <input type="hidden" class="mrnr" value="" />
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
